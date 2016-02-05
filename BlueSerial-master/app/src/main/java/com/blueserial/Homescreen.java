@@ -66,6 +66,8 @@ public class Homescreen extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+		setTitle(MainActivity.APP_NAME);
 		
 		setContentView(R.layout.activity_homescreen);
 		ActivityHelper.initialize(this); //This is to ensure that the rotation persists across activities and not just this one

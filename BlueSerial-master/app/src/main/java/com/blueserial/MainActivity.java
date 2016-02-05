@@ -39,6 +39,9 @@ public class MainActivity extends Activity {
 	private static final String PHONE_NUMBER = "01676099300";
 	private static final String MESSAGE = "Potential Thief Alert";
 	private static final String TAG = "BlueTest5-MainActivity";
+
+	public static final String APP_NAME = "Burglar Alert App";
+
 	private int mMaxChars = 50000;//Default
 	private UUID mDeviceUUID;
 	private BluetoothSocket mBTSocket;
@@ -162,6 +165,8 @@ public class MainActivity extends Activity {
 				phoneNumberEditText.setHint("Enter Phone Number Here");
 			}
 		});
+
+		setTitle(this.APP_NAME);
 
 	}
 

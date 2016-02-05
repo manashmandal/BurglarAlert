@@ -13,6 +13,8 @@ import android.preference.PreferenceManager;
 
 public class ActivityHelper {
 	public static void initialize(Activity activity) {
+
+
 		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(activity);
 
 		String orientation = prefs.getString("prefOrientation", "Null");
